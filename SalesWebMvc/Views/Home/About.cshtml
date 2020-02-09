@@ -1,7 +1,13 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+<h2>Title: @ViewData["Title"]</h2>
+<h3>Message: @ViewData["Message"]</h3>
+<h3>Email: @ViewData["Email"]</h3>
 
-<p>Use this area to provide additional information.</p>
+
+<p>1 - Os parâmetros são passados do Controller à View usando '@@ViewData["string com nome do parâmetro"]'</p>
+<p>2 - Foi assim que passei "Message" e Email para a View Home/About</p>
+<p>3 - O ViewData["Title"] eu atribui o valor na própria view usando @@{}, que me permite inserir códigos C#</p>
+
+<p>PS: Usa-se apenas uma arroba antes do ViewData, mas coloquei 2 nos comentários para que não fosse entendido como um comando</p>
